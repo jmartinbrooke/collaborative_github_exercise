@@ -12,14 +12,14 @@ gif provided by the awesome **Jen Bright** [**@MorphobeakGeek**](https://twitter
 
 ***
 
-In this exercise we will use a github repo to collaboratively collate and simulate evolutionary trajectories for each participants' species body size using a simple brownian motion evolutionary model. This assumes evolutionary steps to progress comletely at random. You could say, it's a bit of lottery! 
+In this exercise we will use a github repo to collaboratively collate and simulate evolutionary trajectories for each participants' species body size using a simple brownian motion evolutionary model. This assumes evolutionary steps to progress comletely at random. You could say, it's a bit of lottery!
 
 
 ## **our mission**
 
-- Each participant will **create and contribute a file** specifying the parameters required to simulate and plot their species evolutionary trajectory. 
-- We'll collect all participants' files in the master repo. 
-- Once all trajectories are simulated they'll be plotted together. 
+- Each participant will **create and contribute a file** specifying the parameters required to simulate and plot their species evolutionary trajectory.
+- We'll collect all participants' files in the master repo.
+- Once all trajectories are simulated they'll be plotted together.
 - Participants will then get to **see the skull and beak shape** corresponding to their species relative body size!
 
 <br>
@@ -37,10 +37,10 @@ We'll be **accepting pull requests** by remote participants between **11.30 - 12
 # **GO!**
 [link to full session handout](https://annakrystalli.github.io/Mozfest_github-rstudio/index.html)
 
-#### **github:** fork 
+#### **github:** fork
 
 - fork the repo into your own account
-- copy repo url link local files to github repo 
+- copy repo url link local files to github repo
 
 <br>
 
@@ -54,7 +54,7 @@ We'll be **accepting pull requests** by remote participants between **11.30 - 12
 
 #### **rstudio:** create parameter `.R` script
 
-A template is provided in the repo, in folder `/params` named `params_tmpl.R`. Open the `params_tmpl.R` and **save as** to create a duplicate template. Name the template using the name of your species. 
+A template is provided in the repo, in folder `/params` named `params_tmpl.R`. Open the `params_tmpl.R` and **save as** to create a duplicate template. Name the template using the name of your species.
 
 ##### **!! PLEASE DO NOT EDIT THE `params_tmpl.R` FILE !!**
 
@@ -64,11 +64,11 @@ A template is provided in the repo, in folder `/params` named `params_tmpl.R`. O
 
 The parameters each participants need to supply are:
 
-- **`sig2`:** A numeric value greater than 0 but smaller than 5
+- **`3`** A numeric value greater than 0 but smaller than 5
 
-- **`species.name`:** a character string e.g. `"anas_krystallinus"`. Try to create a species name out of your name!
+- **`John Brookius`:** a character string e.g. `"anas_krystallinus"`. Try to create a species name out of your name!
 
-- **`color`:** e.g. `"red"`, `"#FFFFFF"` (tip: **pick a color using Rstudio's Color picker:**)
+- **`green`:** e.g. `"red"`, `"#FFFFFF"` (tip: **pick a color using Rstudio's Color picker:**)
 
 
 <img src="assets/colour_picker.png" width="500px" />
@@ -78,7 +78,7 @@ The parameters each participants need to supply are:
 
 #### **rstudio:** save and commit the changes
 
-- Use the git tab, tick the box next to **your new script ONLY** and commit. 
+- Use the git tab, tick the box next to **your new script ONLY** and commit.
 
 - Supply a descriptive message of the commit.
 
@@ -91,7 +91,7 @@ The parameters each participants need to supply are:
 
 #### **github:** create pull request
  - create a pull request to merge your changes to the master repo
- 
+
 #### **github:** check to see my response to your request
  - most likely it'll be a thumbs up! But I might also **request a correction** if I spot an error.
 
@@ -121,11 +121,11 @@ install.packages(c("renv", "usethis"))
 Next, **clone your own fork of the repository**. In the code example below you will need to edit the `repo_spec` argument with your own GitHub account name as well as supply the path where you want the repo cloned to in `destdir`.
 
 ```r
-usethis::create_from_github(repo_spec = "YOUR-ACCOUNT-NAME/collaborative_github_exercise", 
+usethis::create_from_github(repo_spec = "YOUR-ACCOUNT-NAME/collaborative_github_exercise",
                             fork = FALSE, destdir = "path/where/you/want/the/repo/cloned/to")
 ```
 
-This will clone your fork from GitHub and open up the project. 
+This will clone your fork from GitHub and open up the project.
 
 ### Install dependencies by restoring `renv` library
 
